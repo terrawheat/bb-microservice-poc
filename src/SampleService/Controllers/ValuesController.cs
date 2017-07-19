@@ -11,9 +11,12 @@ namespace SampleService.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IDictionary<string, string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new Dictionary<string, string>()
+            {
+                { "Foo", "Bar" }
+            };
         }
     }
 }

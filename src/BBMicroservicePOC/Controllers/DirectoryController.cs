@@ -16,7 +16,7 @@ namespace BBMicroservicePOC.Controllers
             {
                 { ServiceType.SampleService, new List<Uri>()
                 {
-                    new Uri("localhost:29777")
+                    new Uri("http://localhost:29777")
                 } }
             };
         }
